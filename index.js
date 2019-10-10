@@ -1,6 +1,6 @@
 var BuildSystem = require("./cmake-js/lib").BuildSystem;
 
-var options = {"directory":"E:/cosmos/examples/N-API_CPP","debug":false,"cmakePath":null,"preferMake":false,"preferXcode":false,"preferGnu":false,"preferClang":false,"cMakeOptions":{},"silent":false}
+var options = {"directory":"E:/cosmos/examples/N-API_CPP","generator":"MinGW Makefiles","debug":false,"cmakePath":null,"preferMake":false,"preferXcode":false,"preferGnu":false,"preferClang":false,"cMakeOptions":{},"silent":false}
 
 
 var buildSystem = new BuildSystem(options);
