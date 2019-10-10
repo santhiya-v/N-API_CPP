@@ -15,7 +15,7 @@ int add(int a, int b){
 Napi::Number addWrapped(const Napi::CallbackInfo& info)
 {
     Napi::Env env = info.Env();
-    if(info.Length()<0 || !info[0].IsString()){
+    if(info.Length()<0 || !info[0].IsNumber()){
         Napi::TypeError::New(env, "String Expected").ThrowAsJavaScriptException();
     }
 
